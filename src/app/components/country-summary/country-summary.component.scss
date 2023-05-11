@@ -1,0 +1,21 @@
+.country-summary {
+  padding-top: 3rem;
+}
+
+.containerBody{
+  width: 100vw;
+  height: 100vh;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divCenter{
+  flex-direction: column;
+
+  @media(min-width: 720px) {
+    flex-direction: row;
+    padding-left: 50px;
+  }
+}

@@ -1,0 +1,15 @@
+<main class="country-info">
+  <div class="container">
+    <div class="row">
+      <form [formGroup]="formulario">
+        <p>O nome completo do Brasil é: <b>{{formulario.get('name')?.value}}</b></p>
+        <p>A sua capital se chama: <b>{{formulario.get('capital')?.value}}</b></p>
+        <p>Fica localizado no continente: <b>{{formulario.get('continente')?.value}}</b></p>
+        <p>Sua língua é: <b>{{formulario.get('lingua')?.value}}</b></p>
+        <p>O total de habitantes: <b>{{formulario.get('populacao')?.value}}</b></p>
+        <p>Sua bandeira oficial:</p>
+        <img [src]="formulario.controls['img'].value"/>
+      </form>
+    </div>
+  </div>
+</main>
